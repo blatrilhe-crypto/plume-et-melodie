@@ -1,0 +1,77 @@
+
+<style>
+  .card { border-radius: 12px; padding: 20px; flex: 1; min-width: 200px; border: 0.5px solid transparent; }
+  .tag { display: inline-block; border-radius: 20px; padding: 3px 11px; font-size: 11px; font-weight: 500; margin-bottom: 12px; }
+  .price { font-size: 28px; font-weight: 500; margin: 8px 0 4px; }
+  .price-sub { font-size: 11px; color: var(--color-text-secondary); margin-bottom: 14px; }
+  .feat { font-size: 12px; color: var(--color-text-primary); padding: 5px 0; border-bottom: 0.5px solid var(--color-border-tertiary); display: flex; gap: 8px; align-items: flex-start; }
+  .feat:last-child { border-bottom: none; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; margin-top: 5px; flex-shrink: 0; }
+  .name { font-size: 15px; font-weight: 500; margin-bottom: 2px; }
+  .subtitle { font-size: 11px; margin-bottom: 10px; }
+  h2.sr-only { position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0); }
+</style>
+<h2 class="sr-only">Trois offres de chansons personnalisées : Étincelle, Mélodie, et Signature</h2>
+
+<div style="padding: 1rem 0">
+<div style="display:flex; gap: 14px; flex-wrap: wrap; margin-bottom: 18px;">
+
+  <!-- Offre 1 -->
+  <div class="card" style="background:#E1F5EE; border-color:#5DCAA5;">
+    <span class="tag" style="background:#0F6E56;color:#E1F5EE;">Offre 1 · Entrée</span>
+    <div class="name" style="color:#085041;">✦ Étincelle</div>
+    <div class="subtitle" style="color:#0F6E56;">Le client écrit, toi tu composes</div>
+    <div class="price" style="color:#085041;">39 €</div>
+    <div class="price-sub">paroles fournies par le client</div>
+    <div class="feat"><span class="dot" style="background:#1D9E75"></span>1 chanson générée avec Suno</div>
+    <div class="feat"><span class="dot" style="background:#1D9E75"></span>Genre musical au choix (liste)</div>
+    <div class="feat"><span class="dot" style="background:#1D9E75"></span>Fichier MP3 livré en 48h</div>
+    <div class="feat"><span class="dot" style="background:#1D9E75"></span>1 révision incluse</div>
+    <div class="feat"><span class="dot" style="background:#1D9E75"></span>Toutes occasions</div>
+  </div>
+
+  <!-- Offre 2 -->
+  <div class="card" style="background:#EEEDFE; border-color:#7F77DD;">
+    <span class="tag" style="background:#534AB7;color:#EEEDFE;">Offre 2 · Cœur ⭐</span>
+    <div class="name" style="color:#26215C;">✦ Mélodie</div>
+    <div class="subtitle" style="color:#534AB7;">La plus vendue — tout inclus</div>
+    <div class="price" style="color:#26215C;">79 €</div>
+    <div class="price-sub">paroles écrites par toi + musique</div>
+    <div class="feat"><span class="dot" style="background:#534AB7"></span>Questionnaire personnalisé</div>
+    <div class="feat"><span class="dot" style="background:#534AB7"></span>Paroles sur-mesure (couplet + refrain)</div>
+    <div class="feat"><span class="dot" style="background:#534AB7"></span>1 chanson Suno (genre au choix)</div>
+    <div class="feat"><span class="dot" style="background:#534AB7"></span>MP3 livré en 72h</div>
+    <div class="feat"><span class="dot" style="background:#534AB7"></span>2 révisions incluses</div>
+    <div class="feat"><span class="dot" style="background:#534AB7"></span>Paroles en PDF offert</div>
+  </div>
+
+  <!-- Offre 3 -->
+  <div class="card" style="background:#FAEEDA; border-color:#EF9F27;">
+    <span class="tag" style="background:#854F0B;color:#FAEEDA;">Offre 3 · Premium</span>
+    <div class="name" style="color:#412402;">✦ Signature</div>
+    <div class="subtitle" style="color:#854F0B;">Pour les moments inoubliables</div>
+    <div class="price" style="color:#412402;">149 €</div>
+    <div class="price-sub">expérience complète & personnalisée</div>
+    <div class="feat"><span class="dot" style="background:#BA7517"></span>Appel découverte 20 min inclus</div>
+    <div class="feat"><span class="dot" style="background:#BA7517"></span>Paroles longues (2 couplets + pont)</div>
+    <div class="feat"><span class="dot" style="background:#BA7517"></span>2 versions musicales au choix</div>
+    <div class="feat"><span class="dot" style="background:#BA7517"></span>MP3 HD + version instrumentale</div>
+    <div class="feat"><span class="dot" style="background:#BA7517"></span>Révisions illimitées (7 jours)</div>
+    <div class="feat"><span class="dot" style="background:#BA7517"></span>Livraison sous 5 jours</div>
+    <div class="feat"><span class="dot" style="background:#BA7517"></span>Paroles encadrables (PDF premium)</div>
+  </div>
+
+</div>
+
+<!-- Options additionnelles -->
+<div style="background:var(--color-background-secondary); border-radius:12px; padding:16px 20px; border: 0.5px solid var(--color-border-tertiary);">
+  <div style="font-size:13px; font-weight:500; color:var(--color-text-primary); margin-bottom:10px;">Options vendables en supplément</div>
+  <div style="display:flex; flex-wrap:wrap; gap:8px;">
+    <span style="background:#FCEBEB;color:#791F1F;border-radius:20px;padding:4px 12px;font-size:11px;border:0.5px solid #F09595;">+15 € · Version instrumentale seule</span>
+    <span style="background:#FCEBEB;color:#791F1F;border-radius:20px;padding:4px 12px;font-size:11px;border:0.5px solid #F09595;">+20 € · 2ème langue (EN / ES / IT)</span>
+    <span style="background:#FCEBEB;color:#791F1F;border-radius:20px;padding:4px 12px;font-size:11px;border:0.5px solid #F09595;">+25 € · Livraison express 24h</span>
+    <span style="background:#FCEBEB;color:#791F1F;border-radius:20px;padding:4px 12px;font-size:11px;border:0.5px solid #F09595;">+30 € · Version avec voix masculine ET féminine</span>
+    <span style="background:#FCEBEB;color:#791F1F;border-radius:20px;padding:4px 12px;font-size:11px;border:0.5px solid #F09595;">+50 € · Offre entreprise (droits cession inclus)</span>
+  </div>
+</div>
+</div>
