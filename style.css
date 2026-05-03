@@ -1423,3 +1423,37 @@ h3 {
   background: rgba(240, 180, 41, 0.25);
   color: var(--white);
 }
+
+/* ════════════════════════════════════════════════════════
+   PAGES SEO
+   ════════════════════════════════════════════════════════ */
+.seo-page { padding-top: var(--nav-h); min-height: 100vh; }
+.seo-article { max-width: 780px; margin: 0 auto; padding: clamp(3rem, 6vw, 6rem) 0; }
+.seo-header { margin-bottom: 4rem; padding-bottom: 3rem; border-bottom: 1px solid var(--surface-3); }
+.seo-header h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.2rem; line-height: 1.15; }
+.seo-header h1 em { color: var(--gold); font-style: italic; }
+.seo-intro { font-size: 1.1rem; color: var(--white-muted); line-height: 1.8; max-width: 60ch; }
+.seo-section { margin-bottom: 3rem; }
+.seo-section h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 400; color: var(--white); margin-bottom: 1rem; }
+.seo-section p { font-size: 0.95rem; color: var(--white-muted); line-height: 1.9; margin-bottom: 1rem; }
+.seo-section strong { color: var(--white); font-weight: 500; }
+.seo-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; margin-top: 0.5rem; }
+.seo-list li { font-size: 0.92rem; color: var(--white-muted); padding-left: 1.5rem; position: relative; line-height: 1.7; }
+.seo-list li::before { content: '—'; color: var(--gold); position: absolute; left: 0; }
+ol.seo-list { counter-reset: seo-counter; }
+ol.seo-list li { counter-increment: seo-counter; }
+ol.seo-list li::before { content: counter(seo-counter); color: var(--gold); font-family: var(--serif); font-size: 0.85rem; }
+.seo-offres { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--surface-3); border: 1px solid var(--surface-3); border-radius: 4px; overflow: hidden; margin-top: 1rem; }
+.seo-offre { background: var(--surface-2); padding: 1.5rem; }
+.seo-offre.featured { background: var(--black); border-top: 2px solid var(--gold); }
+.seo-offre h3 { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; color: var(--white); margin-bottom: 0.6rem; }
+.seo-offre.featured h3 { color: var(--gold); }
+.seo-offre p { font-size: 0.82rem; color: var(--white-muted); line-height: 1.6; }
+.seo-faq { display: flex; flex-direction: column; gap: 1.5rem; }
+.seo-faq-item h3 { font-family: var(--sans); font-size: 0.9rem; font-weight: 500; color: var(--white); margin-bottom: 0.4rem; }
+.seo-faq-item p { font-size: 0.88rem; color: var(--white-muted); line-height: 1.7; }
+.seo-cta-block { margin-top: 4rem; padding: 3rem; background: rgba(240, 180, 41, 0.05); border: 1px solid var(--gold-border); border-radius: 4px; text-align: center; }
+.seo-cta-block h2 { font-family: var(--serif); font-size: 1.8rem; margin-bottom: 0.8rem; }
+.seo-cta-block p { color: var(--white-muted); margin-bottom: 1.8rem; }
+.seo-cta-block .btn-gold, .seo-cta-block .btn-outline { margin: 0 0.5rem; }
+@media (max-width: 700px) { .seo-offres { grid-template-columns: 1fr; } .seo-cta-block { padding: 2rem 1.5rem; } .seo-cta-block .btn-gold, .seo-cta-block .btn-outline { display: block; margin: 0.5rem 0; text-align: center; } }
