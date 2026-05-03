@@ -31,16 +31,24 @@
 
 /* ── Reset ─────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 20px; }
+html { scroll-behavior: smooth; font-size: 18px; }
 body {
   background: var(--black);
   color: var(--white);
   font-family: var(--sans);
+  font-size: 16px;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
+
+/* ── Taille de texte minimale globale ───────────────────── */
+p, li, label, input, textarea, select, span, a {
+  font-size: 16px;
+}
+h3 { font-size: 20px; }
+h2 { font-size: 26px; }
 
 /* ── Background image pleine page (fixe) ───────────────── */
 body::before {
