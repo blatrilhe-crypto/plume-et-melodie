@@ -48,7 +48,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background: url('download (2).png') center / cover no-repeat;
+  background: url('background.png') center / cover no-repeat;
 }
 body::after {
   content: '';
