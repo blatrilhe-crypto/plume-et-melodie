@@ -1435,12 +1435,13 @@ h3 {
 /* ════════════════════════════════════════════════════════
    PAGES SEO
    ════════════════════════════════════════════════════════ */
-.seo-page { padding-top: var(--nav-h); min-height: 100vh; }
-.seo-article { max-width: 780px; margin: 0 auto; padding: clamp(3rem, 6vw, 6rem) 0; }
-.seo-header { margin-bottom: 4rem; padding-bottom: 3rem; border-bottom: 1px solid var(--surface-3); }
-.seo-header h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.2rem; line-height: 1.15; }
-.seo-header h1 em { color: var(--gold); font-style: italic; }
-.seo-intro { font-size: 1.1rem; color: var(--white-muted); line-height: 1.8; max-width: 60ch; }
+.seo-page { padding-top: calc(var(--nav-h) + 3rem); min-height: 100vh; }
+.seo-article { max-width: 780px; margin: 0 auto; padding: 0 0 clamp(3rem, 6vw, 6rem); }
+.seo-header { margin-bottom: 3rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--surface-3); }
+.seo-header .section-tag { margin-bottom: 1rem; }
+.seo-header h1 { font-size: clamp(1.6rem, 2.8vw, 2.2rem); margin-bottom: 1.2rem; line-height: 1.2; }
+.seo-header h1 em { color: var(--gold); font-style: italic; display: block; }
+.seo-intro { font-size: 1rem; color: var(--white-muted); line-height: 1.8; max-width: 65ch; }
 .seo-section { margin-bottom: 3rem; }
 .seo-section h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 400; color: var(--white); margin-bottom: 1rem; }
 .seo-section p { font-size: 0.95rem; color: var(--white-muted); line-height: 1.9; margin-bottom: 1rem; }
