@@ -1464,4 +1464,19 @@ ol.seo-list li::before { content: counter(seo-counter); color: var(--gold); font
 .seo-cta-block h2 { font-family: var(--serif); font-size: 1.8rem; margin-bottom: 0.8rem; }
 .seo-cta-block p { color: var(--white-muted); margin-bottom: 1.8rem; }
 .seo-cta-block .btn-gold, .seo-cta-block .btn-outline { margin: 0 0.5rem; }
-@media (max-width: 700px) { .seo-offres { grid-template-columns: 1fr; } .seo-cta-block { padding: 2rem 1.5rem; } .seo-cta-block .btn-gold, .seo-cta-block .btn-outline { display: block; margin: 0.5rem 0; text-align: center; } }
+.seo-related { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--gold-border); }
+.seo-related-title { font-family: var(--serif); font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+.seo-related-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.seo-related-links a { display: inline-block; padding: 0.45rem 1rem; border: 1px solid var(--gold-border); border-radius: 2px; color: var(--white-muted); font-size: 0.9rem; text-decoration: none; transition: color 0.2s, border-color 0.2s; }
+.seo-related-links a:hover { color: var(--gold); border-color: var(--gold); }
+/* ── Occasions band (index.html) ─────────────────────────── */
+.occasions-band { background: rgba(8,8,8,0.6); }
+.occasions-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem; }
+.occasion-card { display: flex; flex-direction: column; align-items: flex-start; padding: 2rem 1.8rem; background: rgba(255,255,255,0.03); border: 1px solid var(--gold-border); border-radius: 4px; text-decoration: none; color: var(--white); transition: border-color 0.2s, background 0.2s; }
+.occasion-card:hover { border-color: var(--gold); background: rgba(240,180,41,0.06); }
+.occasion-icon { font-size: 1.8rem; color: var(--gold); margin-bottom: 1rem; line-height: 1; }
+.occasion-card h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; margin-bottom: 0.6rem; }
+.occasion-card p { font-size: 0.88rem; color: var(--white-muted); line-height: 1.6; flex-grow: 1; margin-bottom: 1.2rem; }
+.occasion-link { font-size: 0.82rem; letter-spacing: 0.08em; color: var(--gold); text-transform: uppercase; }
+@media (max-width: 900px) { .occasions-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 700px) { .seo-offres { grid-template-columns: 1fr; } .seo-cta-block { padding: 2rem 1.5rem; } .seo-cta-block .btn-gold, .seo-cta-block .btn-outline { display: block; margin: 0.5rem 0; text-align: center; } .seo-related-links { flex-direction: column; } .occasions-grid { grid-template-columns: 1fr; } }
