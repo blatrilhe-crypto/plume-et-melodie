@@ -1480,3 +1480,24 @@ ol.seo-list li::before { content: counter(seo-counter); color: var(--gold); font
 .occasion-link { font-size: 0.82rem; letter-spacing: 0.08em; color: var(--gold); text-transform: uppercase; }
 @media (max-width: 900px) { .occasions-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 700px) { .seo-offres { grid-template-columns: 1fr; } .seo-cta-block { padding: 2rem 1.5rem; } .seo-cta-block .btn-gold, .seo-cta-block .btn-outline { display: block; margin: 0.5rem 0; text-align: center; } .seo-related-links { flex-direction: column; } .occasions-grid { grid-template-columns: 1fr; } }
+
+/* ── Blog band (index) & blog index page ─────────────────── */
+.blog-band { background: rgba(8,8,8,0.7); }
+.blog-index-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+.blog-index-card { display: flex; flex-direction: column; padding: 2rem 1.8rem; background: rgba(255,255,255,0.03); border: 1px solid var(--gold-border); border-radius: 4px; text-decoration: none; color: var(--white); transition: border-color 0.2s, background 0.2s; }
+.blog-index-card:hover { border-color: var(--gold); background: rgba(240,180,41,0.05); }
+.blog-index-tag { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; }
+.blog-index-card h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; margin-bottom: 0.6rem; line-height: 1.4; }
+.blog-index-card p { font-size: 0.88rem; color: var(--white-muted); line-height: 1.6; }
+/* Blog index page (blog.html) */
+.blog-category { margin-bottom: 3.5rem; }
+.blog-category-title { font-family: var(--serif); font-size: 1.5rem; font-weight: 300; color: var(--gold); border-bottom: 1px solid var(--gold-border); padding-bottom: 0.8rem; margin-bottom: 1.8rem; }
+.blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.blog-card { display: flex; flex-direction: column; padding: 2rem 1.8rem; background: rgba(255,255,255,0.03); border: 1px solid var(--gold-border); border-radius: 4px; text-decoration: none; color: var(--white); transition: border-color 0.2s, background 0.2s; }
+.blog-card:hover { border-color: var(--gold); background: rgba(240,180,41,0.05); }
+.blog-card-tag { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; }
+.blog-card h3 { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; margin-bottom: 0.6rem; line-height: 1.4; }
+.blog-card p { font-size: 0.88rem; color: var(--white-muted); line-height: 1.6; flex-grow: 1; margin-bottom: 1.2rem; }
+.blog-card-link { font-size: 0.82rem; color: var(--gold); letter-spacing: 0.05em; }
+@media (max-width: 900px) { .blog-index-grid, .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .blog-index-grid, .blog-grid { grid-template-columns: 1fr; } }
